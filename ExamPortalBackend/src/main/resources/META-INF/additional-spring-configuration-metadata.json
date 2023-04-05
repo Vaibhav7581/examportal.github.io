@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "allowed-origins",
+    "type": "java.lang.String",
+    "description": "A description for 'allowed-origins'"
+  },
+  {
+    "name": "allowed.origins",
+    "type": "java.lang.String",
+    "description": "A description for 'allowed.origins'"
+  }
+]}

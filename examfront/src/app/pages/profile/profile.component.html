@@ -1,0 +1,51 @@
+<mat-card *ngIf="user">
+    <h2>Your Profile Details</h2>
+
+    
+    <mat-card-content>
+
+        <div class="bootstarp-wrapper">
+            <div class="container">
+                <div class="container text-center">
+                    <img class="profile-img"
+                        src="../../../assets/shri.jpg"
+                        alt="">
+                   <h2>{{user.firstname}} {{user.lastname}}</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <table class="table text-center">
+                            <tr>
+                                <th>Username</th>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <th>UserId</th>
+                                <td>{{user.id}}</td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td>{{user.phonenumber}}</td>
+                            </tr>
+                            <tr>
+                                <th>Role</th>
+                                <td>{{ user.authorities[0].authority }}</td>
+                            </tr>
+                            <tr>
+                                <th>Status</th>
+                                <td>{{ user.enabled ? "ACTIVE" : "NOTACTIVE" }}</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">Update</button>
+        <button  mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions>
+</mat-card>

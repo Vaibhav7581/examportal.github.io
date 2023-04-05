@@ -1,0 +1,12 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.font-size{
+    font-size: 18px;
+
+}
+
+.example-icon:hover{
+    color: rgb(0, 255, 221);
+    font-size: 20px;
+}
